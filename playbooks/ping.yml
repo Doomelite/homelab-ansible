@@ -1,0 +1,13 @@
+---
+- name: Test connectivity
+  hosts: docker
+  become: true
+
+  tasks:
+    - name: Ping managed host
+      ansible.builtin.ping:
+
+    - name: Create directory
+      ansible.builtin.file:
+        state: directory
+        path: /opt/homelab
