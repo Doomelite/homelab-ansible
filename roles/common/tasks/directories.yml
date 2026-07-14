@@ -1,0 +1,5 @@
+---
+- name: Create homelab directory
+  ansible.builtin.file:
+    path: "{{ homelab_root_dir }}"
+    state: directory

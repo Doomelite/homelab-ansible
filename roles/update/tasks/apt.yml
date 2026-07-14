@@ -1,0 +1,9 @@
+---
+- name: Update Debian-based systems
+  ansible.builtin.apt:
+    update_cache: true
+    upgrade: safe
+
+- name: Remove unused packages:
+  ansible.builtin.apt:
+    autoremove: true
