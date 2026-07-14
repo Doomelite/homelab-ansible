@@ -1,0 +1,10 @@
+---
+- name: Create homelab directory
+  ansible.builtin.file:
+    path: "{{ homelab_root_dir }}"
+    state: directory
+
+- name: Install packages
+  ansible.builtin.package:
+    name: "{{ docker_packages }}"
+    state: present

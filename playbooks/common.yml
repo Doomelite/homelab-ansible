@@ -1,0 +1,6 @@
+---
+- name: Configure common system
+  hosts: docker
+  become: true
+  roles:
+    - common

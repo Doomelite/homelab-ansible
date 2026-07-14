@@ -1,0 +1,9 @@
+---
+homelab_root_dir: /opt/homelab
+
+docker_packages:
+  - tree
+  - git
+  - curl
+  - vim
+  - htop
