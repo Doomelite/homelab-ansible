@@ -1,5 +1,5 @@
 ---
 - name: Install packages
   ansible.builtin.package:
-    name: "{{ docker_packages }}"
+    name: "{{ common_packages }}"
     state: present

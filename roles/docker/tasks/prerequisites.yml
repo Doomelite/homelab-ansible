@@ -1,0 +1,7 @@
+---
+- name: Install prerequisites
+  ansible.builtin.package:
+    name:
+      - ca-certificates
+      - curl
+    state: present

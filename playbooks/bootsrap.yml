@@ -1,7 +1,10 @@
 ---
 - name: Configure common system
-  hosts: docker
+  hosts:
+    - docker
+    - erp
   become: true
   roles:
     - update
     - common
+    - docker
