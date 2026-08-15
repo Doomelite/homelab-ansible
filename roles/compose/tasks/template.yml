@@ -1,0 +1,5 @@
+---
+- name: Create NPM compose from template
+  ansible.builtin.template:
+    src: "nginx/compose.yml.j2"
+    dest: "{{ npm_directory }}/compose.yml"

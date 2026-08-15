@@ -63,8 +63,8 @@ The project is designed to be idempotent, so running the playbook multiple times
 
 ## Roadmap
 
-- [ ] Docker Compose deployments
-- [ ] Nginx
+- [X] Docker Compose deployments
+- [X] Nginx Proxy Manager
 - [ ] AdGuard Home
 - [ ] Prometheus & Grafana
 - [ ] Automated backups

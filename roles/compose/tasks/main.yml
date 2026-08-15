@@ -1,0 +1,4 @@
+---
+- import_tasks: directories.yml
+- import_tasks: template.yml
+- import_tasks: run.yml

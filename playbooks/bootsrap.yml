@@ -8,3 +8,9 @@
     - update
     - common
     - docker
+
+- name: Configure Docker host
+  hosts: docker
+  become: true
+  roles:
+    - compose
