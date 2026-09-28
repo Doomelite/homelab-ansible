@@ -1,1 +1,4 @@
 npm_directory: /opt/homelab/npm
+arr_directory: /opt/homelab/arr-stack
+arr_config_directory: "{{ arr_directory }}/config"
+media_directory: ~/media

@@ -13,3 +13,22 @@
   ansible.builtin.file:
     path: "{{ npm_directory }}/letsencrypt"
     state: directory
+
+- name: Create ARR-Stack directory
+  ansible.builtin.file:
+    path: "{{ arr_directory }}"
+    state: directory
+
+- name: Create ARR-Stack config directory
+  ansible.builtin.file:
+    path: "{{ arr_config_directory }}"
+    state: directory
+
+- name: Create ARR-Stack media directories
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+  loop:
+    - "{{ arr_media_directory }}/movies"
+    - "{{ arr_media_directory }}/tv"
+    - "{{ arr_media_directory }}/downloads"
